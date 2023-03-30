@@ -1,0 +1,38 @@
+[2022-12-16T09:44:24.126+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: tutorial_2.templated backfill__2015-06-04T00:00:00+00:00 [queued]>
+[2022-12-16T09:44:24.132+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: tutorial_2.templated backfill__2015-06-04T00:00:00+00:00 [queued]>
+[2022-12-16T09:44:24.132+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-16T09:44:24.132+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 2
+[2022-12-16T09:44:24.132+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-16T09:44:24.151+0000] {taskinstance.py:1304} INFO - Executing <Task(BashOperator): templated> on 2015-06-04 00:00:00+00:00
+[2022-12-16T09:44:24.154+0000] {standard_task_runner.py:55} INFO - Started process 64629 to run task
+[2022-12-16T09:44:24.159+0000] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'tutorial_2', 'templated', 'backfill__2015-06-04T00:00:00+00:00', '--job-id', '47', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/tutorial_2.py', '--cfg-path', '/tmp/tmpk948w71r']
+[2022-12-16T09:44:24.160+0000] {standard_task_runner.py:83} INFO - Job 47: Subtask templated
+[2022-12-16T09:44:24.217+0000] {task_command.py:389} INFO - Running <TaskInstance: tutorial_2.templated backfill__2015-06-04T00:00:00+00:00 [running]> on host vibrdairflow.tciw5gv3lhjetcyg0kqzfvdylc.hx.internal.cloudapp.net
+[2022-12-16T09:44:24.276+0000] {taskinstance.py:1511} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=airflow@example.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=tutorial_2
+AIRFLOW_CTX_TASK_ID=templated
+AIRFLOW_CTX_EXECUTION_DATE=2015-06-04T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=backfill__2015-06-04T00:00:00+00:00
+[2022-12-16T09:44:24.277+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2022-12-16T09:44:24.278+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', '\n\n    echo "2015-06-04"\n    echo "2015-06-11"\n\n    echo "2015-06-04"\n    echo "2015-06-11"\n\n    echo "2015-06-04"\n    echo "2015-06-11"\n\n    echo "2015-06-04"\n    echo "2015-06-11"\n\n    echo "2015-06-04"\n    echo "2015-06-11"\n']
+[2022-12-16T09:44:24.284+0000] {subprocess.py:86} INFO - Output:
+[2022-12-16T09:44:24.286+0000] {subprocess.py:93} INFO - 2015-06-04
+[2022-12-16T09:44:24.286+0000] {subprocess.py:93} INFO - 2015-06-11
+[2022-12-16T09:44:24.286+0000] {subprocess.py:93} INFO - 2015-06-04
+[2022-12-16T09:44:24.286+0000] {subprocess.py:93} INFO - 2015-06-11
+[2022-12-16T09:44:24.286+0000] {subprocess.py:93} INFO - 2015-06-04
+[2022-12-16T09:44:24.286+0000] {subprocess.py:93} INFO - 2015-06-11
+[2022-12-16T09:44:24.287+0000] {subprocess.py:93} INFO - 2015-06-04
+[2022-12-16T09:44:24.287+0000] {subprocess.py:93} INFO - 2015-06-11
+[2022-12-16T09:44:24.287+0000] {subprocess.py:93} INFO - 2015-06-04
+[2022-12-16T09:44:24.287+0000] {subprocess.py:93} INFO - 2015-06-11
+[2022-12-16T09:44:24.287+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2022-12-16T09:44:24.312+0000] {taskinstance.py:1322} INFO - Marking task as SUCCESS. dag_id=tutorial_2, task_id=templated, execution_date=20150604T000000, start_date=20221216T094424, end_date=20221216T094424
+[2022-12-16T09:44:24.370+0000] {local_task_job.py:159} INFO - Task exited with return code 0
+[2022-12-16T09:44:24.381+0000] {taskinstance.py:2582} INFO - 0 downstream tasks scheduled from follow-on schedule check

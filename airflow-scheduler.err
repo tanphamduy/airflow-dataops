@@ -1,0 +1,13 @@
+[2023-03-27 06:57:27 +0000] [40066] [INFO] Starting gunicorn 20.1.0
+[2023-03-27 06:57:27 +0000] [40066] [INFO] Listening at: http://[::]:8793 (40066)
+[2023-03-27 06:57:27 +0000] [40066] [INFO] Using worker: sync
+[2023-03-27 06:57:27 +0000] [40067] [INFO] Booting worker with pid: 40067
+[2023-03-27 06:57:27 +0000] [40071] [INFO] Booting worker with pid: 40071
+[2023-03-27 19:22:22 +0000] [40066] [INFO] Handling signal: hup
+[2023-03-27 19:22:22 +0000] [40066] [INFO] Hang up: Master
+[2023-03-27 19:22:22 +0000] [40066] [WARNING] Worker with pid 40067 was terminated due to signal 1
+[2023-03-27 19:22:22 +0000] [40066] [WARNING] Worker with pid 40071 was terminated due to signal 1
+[2023-03-27 19:22:22 +0000] [40066] [INFO] Handling signal: term
+[2023-03-27 19:22:22 +0000] [148442] [INFO] Booting worker with pid: 148442
+[2023-03-27 19:22:22 +0000] [148443] [INFO] Booting worker with pid: 148443
+[2023-03-27 19:22:52 +0000] [40066] [INFO] Shutting down: Master

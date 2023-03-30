@@ -1,0 +1,68 @@
+[2023-03-29T03:08:43.478+0000] {processor.py:153} INFO - Started process (PID=69495) to work on /home/azureuser/airflow/dags/test-container-run.py
+[2023-03-29T03:08:43.479+0000] {processor.py:743} INFO - Processing file /home/azureuser/airflow/dags/test-container-run.py for tasks to queue
+[2023-03-29T03:08:43.480+0000] {logging_mixin.py:137} INFO - [2023-03-29T03:08:43.480+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/azureuser/airflow/dags/test-container-run.py
+[2023-03-29T03:08:43.712+0000] {logging_mixin.py:137} WARNING - /home/azureuser/airflow/dags/test-container-run.py:18 FutureWarning: The config section [kubernetes] has been renamed to [kubernetes_executor]. Please update your `conf.get*` call to use the new name
+[2023-03-29T03:08:43.730+0000] {processor.py:753} INFO - DAG(s) dict_keys(['dbt_kubernetes_pod']) retrieved from /home/azureuser/airflow/dags/test-container-run.py
+[2023-03-29T03:08:43.820+0000] {logging_mixin.py:137} INFO - [2023-03-29T03:08:43.820+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2023-03-29T03:08:43.842+0000] {logging_mixin.py:137} INFO - [2023-03-29T03:08:43.842+0000] {dag.py:3423} INFO - Setting next_dagrun for dbt_kubernetes_pod to None, run_after=None
+[2023-03-29T03:08:43.887+0000] {processor.py:175} INFO - Processing /home/azureuser/airflow/dags/test-container-run.py took 0.412 seconds
+[2023-03-29T03:09:14.757+0000] {processor.py:153} INFO - Started process (PID=70111) to work on /home/azureuser/airflow/dags/test-container-run.py
+[2023-03-29T03:09:14.759+0000] {processor.py:743} INFO - Processing file /home/azureuser/airflow/dags/test-container-run.py for tasks to queue
+[2023-03-29T03:09:14.759+0000] {logging_mixin.py:137} INFO - [2023-03-29T03:09:14.759+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/azureuser/airflow/dags/test-container-run.py
+[2023-03-29T03:09:14.967+0000] {logging_mixin.py:137} WARNING - /home/azureuser/airflow/dags/test-container-run.py:18 FutureWarning: The config section [kubernetes] has been renamed to [kubernetes_executor]. Please update your `conf.get*` call to use the new name
+[2023-03-29T03:09:14.977+0000] {processor.py:753} INFO - DAG(s) dict_keys(['dbt_kubernetes_pod']) retrieved from /home/azureuser/airflow/dags/test-container-run.py
+[2023-03-29T03:09:15.003+0000] {logging_mixin.py:137} INFO - [2023-03-29T03:09:15.003+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2023-03-29T03:09:15.035+0000] {logging_mixin.py:137} INFO - [2023-03-29T03:09:15.035+0000] {dag.py:3423} INFO - Setting next_dagrun for dbt_kubernetes_pod to None, run_after=None
+[2023-03-29T03:09:15.068+0000] {processor.py:175} INFO - Processing /home/azureuser/airflow/dags/test-container-run.py took 0.314 seconds
+[2023-03-29T03:09:58.652+0000] {processor.py:153} INFO - Started process (PID=70984) to work on /home/azureuser/airflow/dags/test-container-run.py
+[2023-03-29T03:09:58.654+0000] {processor.py:743} INFO - Processing file /home/azureuser/airflow/dags/test-container-run.py for tasks to queue
+[2023-03-29T03:09:58.655+0000] {logging_mixin.py:137} INFO - [2023-03-29T03:09:58.655+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/azureuser/airflow/dags/test-container-run.py
+[2023-03-29T03:09:58.877+0000] {logging_mixin.py:137} WARNING - /home/azureuser/airflow/dags/test-container-run.py:18 FutureWarning: The config section [kubernetes] has been renamed to [kubernetes_executor]. Please update your `conf.get*` call to use the new name
+[2023-03-29T03:09:58.891+0000] {processor.py:753} INFO - DAG(s) dict_keys(['dbt_kubernetes_pod']) retrieved from /home/azureuser/airflow/dags/test-container-run.py
+[2023-03-29T03:09:58.902+0000] {logging_mixin.py:137} INFO - [2023-03-29T03:09:58.902+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2023-03-29T03:09:58.929+0000] {logging_mixin.py:137} INFO - [2023-03-29T03:09:58.929+0000] {dag.py:3423} INFO - Setting next_dagrun for dbt_kubernetes_pod to None, run_after=None
+[2023-03-29T03:09:58.963+0000] {processor.py:175} INFO - Processing /home/azureuser/airflow/dags/test-container-run.py took 0.314 seconds
+[2023-03-29T03:10:41.940+0000] {processor.py:153} INFO - Started process (PID=72262) to work on /home/azureuser/airflow/dags/test-container-run.py
+[2023-03-29T03:10:41.942+0000] {processor.py:743} INFO - Processing file /home/azureuser/airflow/dags/test-container-run.py for tasks to queue
+[2023-03-29T03:10:41.943+0000] {logging_mixin.py:137} INFO - [2023-03-29T03:10:41.942+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/azureuser/airflow/dags/test-container-run.py
+[2023-03-29T03:10:42.146+0000] {logging_mixin.py:137} WARNING - /home/azureuser/airflow/dags/test-container-run.py:18 FutureWarning: The config section [kubernetes] has been renamed to [kubernetes_executor]. Please update your `conf.get*` call to use the new name
+[2023-03-29T03:10:42.157+0000] {processor.py:753} INFO - DAG(s) dict_keys(['dbt_kubernetes_pod']) retrieved from /home/azureuser/airflow/dags/test-container-run.py
+[2023-03-29T03:10:42.209+0000] {logging_mixin.py:137} INFO - [2023-03-29T03:10:42.209+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2023-03-29T03:10:42.228+0000] {logging_mixin.py:137} INFO - [2023-03-29T03:10:42.228+0000] {dag.py:3423} INFO - Setting next_dagrun for dbt_kubernetes_pod to None, run_after=None
+[2023-03-29T03:10:42.261+0000] {processor.py:175} INFO - Processing /home/azureuser/airflow/dags/test-container-run.py took 0.326 seconds
+[2023-03-29T03:11:21.012+0000] {processor.py:153} INFO - Started process (PID=73173) to work on /home/azureuser/airflow/dags/test-container-run.py
+[2023-03-29T03:11:21.013+0000] {processor.py:743} INFO - Processing file /home/azureuser/airflow/dags/test-container-run.py for tasks to queue
+[2023-03-29T03:11:21.014+0000] {logging_mixin.py:137} INFO - [2023-03-29T03:11:21.014+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/azureuser/airflow/dags/test-container-run.py
+[2023-03-29T03:11:21.221+0000] {logging_mixin.py:137} WARNING - /home/azureuser/airflow/dags/test-container-run.py:18 FutureWarning: The config section [kubernetes] has been renamed to [kubernetes_executor]. Please update your `conf.get*` call to use the new name
+[2023-03-29T03:11:21.230+0000] {processor.py:753} INFO - DAG(s) dict_keys(['dbt_kubernetes_pod']) retrieved from /home/azureuser/airflow/dags/test-container-run.py
+[2023-03-29T03:11:21.255+0000] {logging_mixin.py:137} INFO - [2023-03-29T03:11:21.254+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2023-03-29T03:11:21.275+0000] {logging_mixin.py:137} INFO - [2023-03-29T03:11:21.275+0000] {dag.py:3423} INFO - Setting next_dagrun for dbt_kubernetes_pod to None, run_after=None
+[2023-03-29T03:11:21.313+0000] {processor.py:175} INFO - Processing /home/azureuser/airflow/dags/test-container-run.py took 0.305 seconds
+[2023-03-29T03:11:53.805+0000] {processor.py:153} INFO - Started process (PID=73807) to work on /home/azureuser/airflow/dags/test-container-run.py
+[2023-03-29T03:11:53.806+0000] {processor.py:743} INFO - Processing file /home/azureuser/airflow/dags/test-container-run.py for tasks to queue
+[2023-03-29T03:11:53.807+0000] {logging_mixin.py:137} INFO - [2023-03-29T03:11:53.807+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/azureuser/airflow/dags/test-container-run.py
+[2023-03-29T03:11:54.022+0000] {logging_mixin.py:137} WARNING - /home/azureuser/airflow/dags/test-container-run.py:18 FutureWarning: The config section [kubernetes] has been renamed to [kubernetes_executor]. Please update your `conf.get*` call to use the new name
+[2023-03-29T03:11:54.031+0000] {processor.py:753} INFO - DAG(s) dict_keys(['dbt_kubernetes_pod']) retrieved from /home/azureuser/airflow/dags/test-container-run.py
+[2023-03-29T03:11:54.041+0000] {logging_mixin.py:137} INFO - [2023-03-29T03:11:54.041+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2023-03-29T03:11:54.063+0000] {logging_mixin.py:137} INFO - [2023-03-29T03:11:54.063+0000] {dag.py:3423} INFO - Setting next_dagrun for dbt_kubernetes_pod to None, run_after=None
+[2023-03-29T03:11:54.096+0000] {processor.py:175} INFO - Processing /home/azureuser/airflow/dags/test-container-run.py took 0.301 seconds
+[2023-03-29T03:12:35.701+0000] {processor.py:153} INFO - Started process (PID=74598) to work on /home/azureuser/airflow/dags/test-container-run.py
+[2023-03-29T03:12:35.703+0000] {processor.py:743} INFO - Processing file /home/azureuser/airflow/dags/test-container-run.py for tasks to queue
+[2023-03-29T03:12:35.703+0000] {logging_mixin.py:137} INFO - [2023-03-29T03:12:35.703+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/azureuser/airflow/dags/test-container-run.py
+[2023-03-29T03:12:35.938+0000] {logging_mixin.py:137} WARNING - /home/azureuser/airflow/dags/test-container-run.py:18 FutureWarning: The config section [kubernetes] has been renamed to [kubernetes_executor]. Please update your `conf.get*` call to use the new name
+[2023-03-29T03:12:35.947+0000] {processor.py:753} INFO - DAG(s) dict_keys(['dbt_kubernetes_pod']) retrieved from /home/azureuser/airflow/dags/test-container-run.py
+[2023-03-29T03:12:36.002+0000] {logging_mixin.py:137} INFO - [2023-03-29T03:12:36.002+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2023-03-29T03:12:36.022+0000] {logging_mixin.py:137} INFO - [2023-03-29T03:12:36.021+0000] {dag.py:3423} INFO - Setting next_dagrun for dbt_kubernetes_pod to None, run_after=None
+[2023-03-29T03:12:36.052+0000] {processor.py:175} INFO - Processing /home/azureuser/airflow/dags/test-container-run.py took 0.355 seconds
+[2023-03-29T03:12:48.929+0000] {processor.py:153} INFO - Started process (PID=74914) to work on /home/azureuser/airflow/dags/test-container-run.py
+[2023-03-29T03:12:48.930+0000] {processor.py:743} INFO - Processing file /home/azureuser/airflow/dags/test-container-run.py for tasks to queue
+[2023-03-29T03:12:48.932+0000] {logging_mixin.py:137} INFO - [2023-03-29T03:12:48.931+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/azureuser/airflow/dags/test-container-run.py
+[2023-03-29T03:12:48.933+0000] {logging_mixin.py:137} INFO - [2023-03-29T03:12:48.933+0000] {dagbag.py:320} INFO - File /home/azureuser/airflow/dags/test-container-run.py assumed to contain no DAGs. Skipping.
+[2023-03-29T03:12:48.933+0000] {processor.py:755} WARNING - No viable dags retrieved from /home/azureuser/airflow/dags/test-container-run.py
+[2023-03-29T03:12:48.947+0000] {processor.py:175} INFO - Processing /home/azureuser/airflow/dags/test-container-run.py took 0.022 seconds
+[2023-03-29T03:13:32.535+0000] {processor.py:153} INFO - Started process (PID=75738) to work on /home/azureuser/airflow/dags/test-container-run.py
+[2023-03-29T03:13:32.536+0000] {processor.py:743} INFO - Processing file /home/azureuser/airflow/dags/test-container-run.py for tasks to queue
+[2023-03-29T03:13:32.537+0000] {logging_mixin.py:137} INFO - [2023-03-29T03:13:32.537+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/azureuser/airflow/dags/test-container-run.py
+[2023-03-29T03:13:32.538+0000] {logging_mixin.py:137} INFO - [2023-03-29T03:13:32.538+0000] {dagbag.py:320} INFO - File /home/azureuser/airflow/dags/test-container-run.py assumed to contain no DAGs. Skipping.
+[2023-03-29T03:13:32.538+0000] {processor.py:755} WARNING - No viable dags retrieved from /home/azureuser/airflow/dags/test-container-run.py
+[2023-03-29T03:13:32.553+0000] {processor.py:175} INFO - Processing /home/azureuser/airflow/dags/test-container-run.py took 0.023 seconds

@@ -1,0 +1,68 @@
+[2023-03-29T08:37:19.233+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: dbt_maturity_docker_run.dbt_run manual__2023-03-29T08:37:05.825433+00:00 [queued]>
+[2023-03-29T08:37:19.239+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: dbt_maturity_docker_run.dbt_run manual__2023-03-29T08:37:05.825433+00:00 [queued]>
+[2023-03-29T08:37:19.239+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-29T08:37:19.239+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 2
+[2023-03-29T08:37:19.239+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-29T08:37:19.266+0000] {taskinstance.py:1304} INFO - Executing <Task(DockerOperator): dbt_run> on 2023-03-29 08:37:05.825433+00:00
+[2023-03-29T08:37:19.270+0000] {standard_task_runner.py:55} INFO - Started process 147457 to run task
+[2023-03-29T08:37:19.275+0000] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'dbt_maturity_docker_run', 'dbt_run', 'manual__2023-03-29T08:37:05.825433+00:00', '--job-id', '1176', '--raw', '--subdir', 'DAGS_FOLDER/dbt_docker_operator.py', '--cfg-path', '/tmp/tmpwwvnksjp']
+[2023-03-29T08:37:19.277+0000] {standard_task_runner.py:83} INFO - Job 1176: Subtask dbt_run
+[2023-03-29T08:37:19.347+0000] {task_command.py:389} INFO - Running <TaskInstance: dbt_maturity_docker_run.dbt_run manual__2023-03-29T08:37:05.825433+00:00 [running]> on host vibrdairflow.tciw5gv3lhjetcyg0kqzfvdylc.hx.internal.cloudapp.net
+[2023-03-29T08:37:19.422+0000] {taskinstance.py:1511} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=tan.phamduy@vib.com.vn
+AIRFLOW_CTX_DAG_OWNER=tan
+AIRFLOW_CTX_DAG_ID=dbt_maturity_docker_run
+AIRFLOW_CTX_TASK_ID=dbt_run
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-29T08:37:05.825433+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-03-29T08:37:05.825433+00:00
+[2023-03-29T08:37:19.430+0000] {docker.py:306} INFO - Starting docker container from image tanphamduy/dbt-maturity:latest
+[2023-03-29T08:37:19.436+0000] {docker.py:314} WARNING - Using remote engine or docker-in-docker and mounting temporary volume from host is not supported. Falling back to `mount_tmp_dir=False` mode. You can set `mount_tmp_dir` parameter to False to disable mounting and remove the warning
+[2023-03-29T08:37:23.679+0000] {docker.py:373} INFO - [0m08:37:23  Running with dbt=1.4.5
+[2023-03-29T08:37:23.733+0000] {docker.py:373} INFO - [0m08:37:23  Unable to do partial parsing because saved manifest not found. Starting full parse.
+[2023-03-29T08:37:25.710+0000] {docker.py:373} INFO - [0m08:37:25  Found 11 models, 20 tests, 0 snapshots, 0 analyses, 495 macros, 1 operation, 6 seed files, 6 sources, 1 exposure, 0 metrics
+[2023-03-29T08:37:25.713+0000] {docker.py:373} INFO - [0m08:37:25
+[2023-03-29T08:37:28.816+0000] {docker.py:373} INFO - [0m08:37:28  Concurrency: 2 threads (target='prod')
+[2023-03-29T08:37:28.817+0000] {docker.py:373} INFO - [0m08:37:28
+[2023-03-29T08:37:28.844+0000] {docker.py:373} INFO - [0m08:37:28  1 of 11 START sql view model STAGING.stg_claim_diagnosis ....................... [RUN]
+[2023-03-29T08:37:28.845+0000] {docker.py:373} INFO - [0m08:37:28  2 of 11 START sql view model STAGING.stg_claim_lines ........................... [RUN]
+[2023-03-29T08:37:30.576+0000] {docker.py:373} INFO - [0m08:37:30  2 of 11 OK created sql view model STAGING.stg_claim_lines ...................... [[32mOK[0m in 1.73s]
+[2023-03-29T08:37:30.581+0000] {docker.py:373} INFO - [0m08:37:30  3 of 11 START sql view model STAGING.stg_claims ................................ [RUN]
+[2023-03-29T08:37:30.805+0000] {docker.py:373} INFO - [0m08:37:30  1 of 11 OK created sql view model STAGING.stg_claim_diagnosis .................. [[32mOK[0m in 1.96s]
+[2023-03-29T08:37:30.808+0000] {docker.py:373} INFO - [0m08:37:30  4 of 11 START sql view model STAGING.stg_doc_specialties ....................... [RUN]
+[2023-03-29T08:37:31.923+0000] {docker.py:373} INFO - [0m08:37:31  3 of 11 OK created sql view model STAGING.stg_claims ........................... [[32mOK[0m in 1.34s]
+[2023-03-29T08:37:31.925+0000] {docker.py:373} INFO - [0m08:37:31  5 of 11 START sql view model STAGING.stg_doctors ............................... [RUN]
+[2023-03-29T08:37:32.076+0000] {docker.py:373} INFO - [0m08:37:32  4 of 11 OK created sql view model STAGING.stg_doc_specialties .................. [[32mOK[0m in 1.27s]
+[2023-03-29T08:37:32.078+0000] {docker.py:373} INFO - [0m08:37:32  6 of 11 START sql view model STAGING.stg_patients .............................. [RUN]
+[2023-03-29T08:37:33.299+0000] {docker.py:373} INFO - [0m08:37:33  5 of 11 OK created sql view model STAGING.stg_doctors .......................... [[32mOK[0m in 1.37s]
+[2023-03-29T08:37:33.301+0000] {docker.py:373} INFO - [0m08:37:33  7 of 11 START sql table model BILLING_ANALYTICS.int_billed_claim_amounts ....... [RUN]
+[2023-03-29T08:37:33.384+0000] {docker.py:373} INFO - [0m08:37:33  6 of 11 OK created sql view model STAGING.stg_patients ......................... [[32mOK[0m in 1.30s]
+[2023-03-29T08:37:33.385+0000] {docker.py:373} INFO - [0m08:37:33  8 of 11 START sql table model BILLING_ANALYTICS.int_claim_diagnosis_pivoted .... [RUN]
+[2023-03-29T08:37:37.977+0000] {docker.py:373} INFO - [0m08:37:37  7 of 11 OK created sql table model BILLING_ANALYTICS.int_billed_claim_amounts .. [[32mOK[0m in 4.68s]
+[2023-03-29T08:37:37.978+0000] {docker.py:373} INFO - [0m08:37:37  9 of 11 START sql table model BILLING_ANALYTICS.dim_doctors .................... [RUN]
+[2023-03-29T08:37:38.015+0000] {docker.py:373} INFO - [0m08:37:38  8 of 11 OK created sql table model BILLING_ANALYTICS.int_claim_diagnosis_pivoted  [[32mOK[0m in 4.62s]
+[0m08:37:38  10 of 11 START sql table model BILLING_ANALYTICS.dim_patients .................. [RUN]
+[2023-03-29T08:37:42.367+0000] {docker.py:373} INFO - [0m08:37:42  9 of 11 OK created sql table model BILLING_ANALYTICS.dim_doctors ............... [[32mOK[0m in 4.39s]
+[2023-03-29T08:37:42.369+0000] {docker.py:373} INFO - [0m08:37:42  11 of 11 START sql incremental model BILLING_ANALYTICS.fct_billed_patient_claims  [RUN]
+[2023-03-29T08:37:42.449+0000] {docker.py:373} INFO - [0m08:37:42  10 of 11 OK created sql table model BILLING_ANALYTICS.dim_patients ............. [[32mOK[0m in 4.44s]
+[2023-03-29T08:37:50.851+0000] {docker.py:373} INFO - [0m08:37:50  11 of 11 OK created sql incremental model BILLING_ANALYTICS.fct_billed_patient_claims  [[32mOK[0m in 8.48s]
+[2023-03-29T08:37:51.024+0000] {docker.py:373} INFO - [0m08:37:51
+[2023-03-29T08:37:51.024+0000] {docker.py:373} INFO - [0m08:37:51  Running 1 on-run-end hook
+[2023-03-29T08:37:51.027+0000] {docker.py:373} INFO - [0m08:37:51
+[2023-03-29T08:37:51.042+0000] {docker.py:373} INFO - [0m08:37:51  Project Test Coverage: 81.82%
+[2023-03-29T08:37:51.048+0000] {docker.py:373} INFO - [0m08:37:51  Project Test to Model Ratio: 1.818
+[2023-03-29T08:37:51.049+0000] {docker.py:373} INFO - [0m08:37:51
+[2023-03-29T08:37:51.051+0000] {docker.py:373} INFO - [0m08:37:51  1 of 1 START hook: dbt_maturity.on-run-end.0 ................................... [RUN]
+[2023-03-29T08:37:51.052+0000] {docker.py:373} INFO - [0m08:37:51  1 of 1 OK hook: dbt_maturity.on-run-end.0 ...................................... [[32mOK[0m in 0.00s]
+[2023-03-29T08:37:51.052+0000] {docker.py:373} INFO - [0m08:37:51
+[2023-03-29T08:37:51.213+0000] {docker.py:373} INFO - [0m08:37:51
+[2023-03-29T08:37:51.214+0000] {docker.py:373} INFO - [0m08:37:51  Finished running 6 view models, 4 table models, 1 incremental model, 1 hook in 0 hours 0 minutes and 25.50 seconds (25.50s).
+[2023-03-29T08:37:51.231+0000] {docker.py:373} INFO - [0m08:37:51
+[2023-03-29T08:37:51.232+0000] {docker.py:373} INFO - [0m08:37:51  [32mCompleted successfully[0m
+[0m08:37:51  
+[0m08:37:51  Done. PASS=11 WARN=0 ERROR=0 SKIP=0 TOTAL=11
+[2023-03-29T08:37:53.731+0000] {taskinstance.py:1322} INFO - Marking task as SUCCESS. dag_id=dbt_maturity_docker_run, task_id=dbt_run, execution_date=20230329T083705, start_date=20230329T083719, end_date=20230329T083753
+[2023-03-29T08:37:53.804+0000] {local_task_job.py:159} INFO - Task exited with return code 0
+[2023-03-29T08:37:53.829+0000] {taskinstance.py:2582} INFO - 0 downstream tasks scheduled from follow-on schedule check

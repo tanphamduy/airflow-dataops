@@ -1,0 +1,147 @@
+[2023-03-29T02:15:18.894+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: dbt_kubernetes_pod.dbt_transformations manual__2023-03-29T02:15:14.167316+00:00 [queued]>
+[2023-03-29T02:15:18.901+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: dbt_kubernetes_pod.dbt_transformations manual__2023-03-29T02:15:14.167316+00:00 [queued]>
+[2023-03-29T02:15:18.901+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-29T02:15:18.901+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 2
+[2023-03-29T02:15:18.902+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-29T02:15:18.934+0000] {taskinstance.py:1304} INFO - Executing <Task(KubernetesPodOperator): dbt_transformations> on 2023-03-29 02:15:14.167316+00:00
+[2023-03-29T02:15:18.937+0000] {standard_task_runner.py:55} INFO - Started process 4223 to run task
+[2023-03-29T02:15:18.947+0000] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'dbt_kubernetes_pod', 'dbt_transformations', 'manual__2023-03-29T02:15:14.167316+00:00', '--job-id', '79', '--raw', '--subdir', 'DAGS_FOLDER/dbt-container-run.py', '--cfg-path', '/tmp/tmptiw6ihhw']
+[2023-03-29T02:15:18.949+0000] {standard_task_runner.py:83} INFO - Job 79: Subtask dbt_transformations
+[2023-03-29T02:15:19.014+0000] {task_command.py:389} INFO - Running <TaskInstance: dbt_kubernetes_pod.dbt_transformations manual__2023-03-29T02:15:14.167316+00:00 [running]> on host vibrdairflow.tciw5gv3lhjetcyg0kqzfvdylc.hx.internal.cloudapp.net
+[2023-03-29T02:15:19.094+0000] {taskinstance.py:1511} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=tan
+AIRFLOW_CTX_DAG_ID=dbt_kubernetes_pod
+AIRFLOW_CTX_TASK_ID=dbt_transformations
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-29T02:15:14.167316+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-03-29T02:15:14.167316+00:00
+[2023-03-29T02:15:19.099+0000] {kubernetes_pod.py:815} INFO - Building pod dbt-transformations-bm2ou4mq with labels: {'dag_id': 'dbt_kubernetes_pod', 'task_id': 'dbt_transformations', 'run_id': 'manual__2023-03-29T021514.1673160000-d98098988', 'kubernetes_pod_operator': 'True', 'try_number': '1'}
+[2023-03-29T02:15:19.100+0000] {kubernetes_pod.py:870} ERROR - Invalid kube-config file. No configuration found.
+Traceback (most recent call last):
+  File "/home/azureuser/.local/lib/python3.8/site-packages/airflow/providers/cncf/kubernetes/hooks/kubernetes.py", line 229, in _get_default_client
+    config.load_incluster_config(client_configuration=self.client_configuration)
+  File "/home/azureuser/.local/lib/python3.8/site-packages/kubernetes/config/incluster_config.py", line 118, in load_incluster_config
+    InClusterConfigLoader(
+  File "/home/azureuser/.local/lib/python3.8/site-packages/kubernetes/config/incluster_config.py", line 54, in load_and_set
+    self._load_config()
+  File "/home/azureuser/.local/lib/python3.8/site-packages/kubernetes/config/incluster_config.py", line 62, in _load_config
+    raise ConfigException("Service host/port is not set.")
+kubernetes.config.config_exception.ConfigException: Service host/port is not set.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/azureuser/.local/lib/python3.8/site-packages/airflow/providers/cncf/kubernetes/operators/kubernetes_pod.py", line 520, in execute_sync
+    self.pod_request_obj = self.build_pod_request_obj(context)
+  File "/home/azureuser/.local/lib/python3.8/site-packages/airflow/providers/cncf/kubernetes/operators/kubernetes_pod.py", line 824, in build_pod_request_obj
+    "airflow_kpo_in_cluster": str(self.hook.is_in_cluster),
+  File "/home/azureuser/.local/lib/python3.8/site-packages/airflow/providers/cncf/kubernetes/hooks/kubernetes.py", line 245, in is_in_cluster
+    self.api_client  # so we can determine if we are in_cluster or not
+  File "/usr/lib/python3.8/functools.py", line 967, in __get__
+    val = self.func(instance)
+  File "/home/azureuser/.local/lib/python3.8/site-packages/airflow/providers/cncf/kubernetes/hooks/kubernetes.py", line 253, in api_client
+    return self.get_conn()
+  File "/home/azureuser/.local/lib/python3.8/site-packages/airflow/providers/cncf/kubernetes/hooks/kubernetes.py", line 221, in get_conn
+    return self._get_default_client(cluster_context=cluster_context)
+  File "/home/azureuser/.local/lib/python3.8/site-packages/airflow/providers/cncf/kubernetes/hooks/kubernetes.py", line 234, in _get_default_client
+    config.load_kube_config(
+  File "/home/azureuser/.local/lib/python3.8/site-packages/kubernetes/config/kube_config.py", line 808, in load_kube_config
+    loader = _get_kube_config_loader(
+  File "/home/azureuser/.local/lib/python3.8/site-packages/kubernetes/config/kube_config.py", line 767, in _get_kube_config_loader
+    raise ConfigException(
+kubernetes.config.config_exception.ConfigException: Invalid kube-config file. No configuration found.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/azureuser/.local/lib/python3.8/site-packages/airflow/providers/cncf/kubernetes/hooks/kubernetes.py", line 229, in _get_default_client
+    config.load_incluster_config(client_configuration=self.client_configuration)
+  File "/home/azureuser/.local/lib/python3.8/site-packages/kubernetes/config/incluster_config.py", line 118, in load_incluster_config
+    InClusterConfigLoader(
+  File "/home/azureuser/.local/lib/python3.8/site-packages/kubernetes/config/incluster_config.py", line 54, in load_and_set
+    self._load_config()
+  File "/home/azureuser/.local/lib/python3.8/site-packages/kubernetes/config/incluster_config.py", line 62, in _load_config
+    raise ConfigException("Service host/port is not set.")
+kubernetes.config.config_exception.ConfigException: Service host/port is not set.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/azureuser/.local/lib/python3.8/site-packages/airflow/providers/cncf/kubernetes/operators/kubernetes_pod.py", line 712, in patch_already_checked
+    self.client.patch_namespaced_pod(
+  File "/usr/lib/python3.8/functools.py", line 967, in __get__
+    val = self.func(instance)
+  File "/home/azureuser/.local/lib/python3.8/site-packages/airflow/providers/cncf/kubernetes/operators/kubernetes_pod.py", line 460, in client
+    return self.hook.core_v1_client
+  File "/usr/lib/python3.8/functools.py", line 967, in __get__
+    val = self.func(instance)
+  File "/home/azureuser/.local/lib/python3.8/site-packages/airflow/providers/cncf/kubernetes/hooks/kubernetes.py", line 257, in core_v1_client
+    return client.CoreV1Api(api_client=self.api_client)
+  File "/usr/lib/python3.8/functools.py", line 967, in __get__
+    val = self.func(instance)
+  File "/home/azureuser/.local/lib/python3.8/site-packages/airflow/providers/cncf/kubernetes/hooks/kubernetes.py", line 253, in api_client
+    return self.get_conn()
+  File "/home/azureuser/.local/lib/python3.8/site-packages/airflow/providers/cncf/kubernetes/hooks/kubernetes.py", line 221, in get_conn
+    return self._get_default_client(cluster_context=cluster_context)
+  File "/home/azureuser/.local/lib/python3.8/site-packages/airflow/providers/cncf/kubernetes/hooks/kubernetes.py", line 234, in _get_default_client
+    config.load_kube_config(
+  File "/home/azureuser/.local/lib/python3.8/site-packages/kubernetes/config/kube_config.py", line 808, in load_kube_config
+    loader = _get_kube_config_loader(
+  File "/home/azureuser/.local/lib/python3.8/site-packages/kubernetes/config/kube_config.py", line 767, in _get_kube_config_loader
+    raise ConfigException(
+kubernetes.config.config_exception.ConfigException: Invalid kube-config file. No configuration found.
+[2023-03-29T02:15:19.120+0000] {taskinstance.py:1772} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/azureuser/.local/lib/python3.8/site-packages/airflow/providers/cncf/kubernetes/hooks/kubernetes.py", line 229, in _get_default_client
+    config.load_incluster_config(client_configuration=self.client_configuration)
+  File "/home/azureuser/.local/lib/python3.8/site-packages/kubernetes/config/incluster_config.py", line 118, in load_incluster_config
+    InClusterConfigLoader(
+  File "/home/azureuser/.local/lib/python3.8/site-packages/kubernetes/config/incluster_config.py", line 54, in load_and_set
+    self._load_config()
+  File "/home/azureuser/.local/lib/python3.8/site-packages/kubernetes/config/incluster_config.py", line 62, in _load_config
+    raise ConfigException("Service host/port is not set.")
+kubernetes.config.config_exception.ConfigException: Service host/port is not set.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/azureuser/.local/lib/python3.8/site-packages/airflow/providers/cncf/kubernetes/operators/kubernetes_pod.py", line 520, in execute_sync
+    self.pod_request_obj = self.build_pod_request_obj(context)
+  File "/home/azureuser/.local/lib/python3.8/site-packages/airflow/providers/cncf/kubernetes/operators/kubernetes_pod.py", line 824, in build_pod_request_obj
+    "airflow_kpo_in_cluster": str(self.hook.is_in_cluster),
+  File "/home/azureuser/.local/lib/python3.8/site-packages/airflow/providers/cncf/kubernetes/hooks/kubernetes.py", line 245, in is_in_cluster
+    self.api_client  # so we can determine if we are in_cluster or not
+  File "/usr/lib/python3.8/functools.py", line 967, in __get__
+    val = self.func(instance)
+  File "/home/azureuser/.local/lib/python3.8/site-packages/airflow/providers/cncf/kubernetes/hooks/kubernetes.py", line 253, in api_client
+    return self.get_conn()
+  File "/home/azureuser/.local/lib/python3.8/site-packages/airflow/providers/cncf/kubernetes/hooks/kubernetes.py", line 221, in get_conn
+    return self._get_default_client(cluster_context=cluster_context)
+  File "/home/azureuser/.local/lib/python3.8/site-packages/airflow/providers/cncf/kubernetes/hooks/kubernetes.py", line 234, in _get_default_client
+    config.load_kube_config(
+  File "/home/azureuser/.local/lib/python3.8/site-packages/kubernetes/config/kube_config.py", line 808, in load_kube_config
+    loader = _get_kube_config_loader(
+  File "/home/azureuser/.local/lib/python3.8/site-packages/kubernetes/config/kube_config.py", line 767, in _get_kube_config_loader
+    raise ConfigException(
+kubernetes.config.config_exception.ConfigException: Invalid kube-config file. No configuration found.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/azureuser/.local/lib/python3.8/site-packages/airflow/providers/cncf/kubernetes/operators/kubernetes_pod.py", line 516, in execute
+    return self.execute_sync(context)
+  File "/home/azureuser/.local/lib/python3.8/site-packages/airflow/providers/cncf/kubernetes/operators/kubernetes_pod.py", line 545, in execute_sync
+    self.cleanup(
+  File "/home/azureuser/.local/lib/python3.8/site-packages/airflow/providers/cncf/kubernetes/operators/kubernetes_pod.py", line 671, in cleanup
+    raise AirflowException(
+airflow.exceptions.AirflowException: Pod None returned a failure:
+
+remote_pod: None
+[2023-03-29T02:15:19.122+0000] {taskinstance.py:1322} INFO - Marking task as UP_FOR_RETRY. dag_id=dbt_kubernetes_pod, task_id=dbt_transformations, execution_date=20230329T021514, start_date=20230329T021518, end_date=20230329T021519
+[2023-03-29T02:15:19.146+0000] {standard_task_runner.py:100} ERROR - Failed to execute job 79 for task dbt_transformations (Pod None returned a failure:
+
+remote_pod: None; 4223)
+[2023-03-29T02:15:19.154+0000] {local_task_job.py:159} INFO - Task exited with return code 1
+[2023-03-29T02:15:19.175+0000] {taskinstance.py:2582} INFO - 0 downstream tasks scheduled from follow-on schedule check

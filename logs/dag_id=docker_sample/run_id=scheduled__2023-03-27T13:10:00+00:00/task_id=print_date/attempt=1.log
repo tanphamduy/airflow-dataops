@@ -1,0 +1,29 @@
+[2023-03-29T06:54:12.713+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: docker_sample.print_date scheduled__2023-03-27T13:10:00+00:00 [queued]>
+[2023-03-29T06:54:12.719+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: docker_sample.print_date scheduled__2023-03-27T13:10:00+00:00 [queued]>
+[2023-03-29T06:54:12.719+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-29T06:54:12.719+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 2
+[2023-03-29T06:54:12.719+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-29T06:54:12.741+0000] {taskinstance.py:1304} INFO - Executing <Task(BashOperator): print_date> on 2023-03-27 13:10:00+00:00
+[2023-03-29T06:54:12.744+0000] {standard_task_runner.py:55} INFO - Started process 348212 to run task
+[2023-03-29T06:54:12.754+0000] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'docker_sample', 'print_date', 'scheduled__2023-03-27T13:10:00+00:00', '--job-id', '399', '--raw', '--subdir', 'DAGS_FOLDER/test_docker_operator.py', '--cfg-path', '/tmp/tmp3ehk4xl_']
+[2023-03-29T06:54:12.755+0000] {standard_task_runner.py:83} INFO - Job 399: Subtask print_date
+[2023-03-29T06:54:12.817+0000] {task_command.py:389} INFO - Running <TaskInstance: docker_sample.print_date scheduled__2023-03-27T13:10:00+00:00 [running]> on host vibrdairflow.tciw5gv3lhjetcyg0kqzfvdylc.hx.internal.cloudapp.net
+[2023-03-29T06:54:12.905+0000] {taskinstance.py:1511} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=airflow@example.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=docker_sample
+AIRFLOW_CTX_TASK_ID=print_date
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-27T13:10:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-03-27T13:10:00+00:00
+[2023-03-29T06:54:12.908+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2023-03-29T06:54:12.909+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'date']
+[2023-03-29T06:54:12.919+0000] {subprocess.py:86} INFO - Output:
+[2023-03-29T06:54:12.922+0000] {subprocess.py:93} INFO - Wed Mar 29 06:54:12 UTC 2023
+[2023-03-29T06:54:12.923+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2023-03-29T06:54:12.956+0000] {taskinstance.py:1322} INFO - Marking task as SUCCESS. dag_id=docker_sample, task_id=print_date, execution_date=20230327T131000, start_date=20230329T065412, end_date=20230329T065412
+[2023-03-29T06:54:13.006+0000] {local_task_job.py:159} INFO - Task exited with return code 0
+[2023-03-29T06:54:13.030+0000] {taskinstance.py:2582} INFO - 2 downstream tasks scheduled from follow-on schedule check

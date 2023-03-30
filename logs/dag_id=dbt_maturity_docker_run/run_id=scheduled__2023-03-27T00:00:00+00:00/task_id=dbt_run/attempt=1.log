@@ -1,0 +1,206 @@
+[2023-03-29T08:15:07.648+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: dbt_maturity_docker_run.dbt_run scheduled__2023-03-27T00:00:00+00:00 [queued]>
+[2023-03-29T08:15:07.654+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: dbt_maturity_docker_run.dbt_run scheduled__2023-03-27T00:00:00+00:00 [queued]>
+[2023-03-29T08:15:07.655+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-29T08:15:07.655+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 2
+[2023-03-29T08:15:07.655+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-29T08:15:07.686+0000] {taskinstance.py:1304} INFO - Executing <Task(DockerOperator): dbt_run> on 2023-03-27 00:00:00+00:00
+[2023-03-29T08:15:07.689+0000] {standard_task_runner.py:55} INFO - Started process 107149 to run task
+[2023-03-29T08:15:07.694+0000] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'dbt_maturity_docker_run', 'dbt_run', 'scheduled__2023-03-27T00:00:00+00:00', '--job-id', '989', '--raw', '--subdir', 'DAGS_FOLDER/dbt_docker_operator.py', '--cfg-path', '/tmp/tmpvd4y3fkh']
+[2023-03-29T08:15:07.696+0000] {standard_task_runner.py:83} INFO - Job 989: Subtask dbt_run
+[2023-03-29T08:15:07.762+0000] {task_command.py:389} INFO - Running <TaskInstance: dbt_maturity_docker_run.dbt_run scheduled__2023-03-27T00:00:00+00:00 [running]> on host vibrdairflow.tciw5gv3lhjetcyg0kqzfvdylc.hx.internal.cloudapp.net
+[2023-03-29T08:15:07.833+0000] {taskinstance.py:1511} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=tan.phamduy@vib.com.vn
+AIRFLOW_CTX_DAG_OWNER=tan
+AIRFLOW_CTX_DAG_ID=dbt_maturity_docker_run
+AIRFLOW_CTX_TASK_ID=dbt_run
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-27T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-03-27T00:00:00+00:00
+[2023-03-29T08:15:07.840+0000] {docker.py:432} INFO - Pulling docker image tanphamduy/dbt-maturity:latest
+[2023-03-29T08:15:10.646+0000] {docker.py:446} INFO - latest: Pulling from tanphamduy/dbt-maturity
+[2023-03-29T08:15:11.409+0000] {docker.py:446} INFO - 01b5b2efb836: Pulling fs layer
+[2023-03-29T08:15:11.409+0000] {docker.py:446} INFO - 5dda314a937a: Pulling fs layer
+[2023-03-29T08:15:11.410+0000] {docker.py:446} INFO - 09f5525c15a3: Pulling fs layer
+[2023-03-29T08:15:11.410+0000] {docker.py:446} INFO - 99cdff813800: Pulling fs layer
+[2023-03-29T08:15:11.410+0000] {docker.py:446} INFO - 7648ab525d5f: Pulling fs layer
+[2023-03-29T08:15:11.410+0000] {docker.py:446} INFO - b4a57f9bc76b: Pulling fs layer
+[2023-03-29T08:15:11.411+0000] {docker.py:446} INFO - 368cbb76c6b4: Pulling fs layer
+[2023-03-29T08:15:11.411+0000] {docker.py:446} INFO - bbcda6a60127: Pulling fs layer
+[2023-03-29T08:15:11.411+0000] {docker.py:446} INFO - 733530e9cc69: Pulling fs layer
+[2023-03-29T08:15:11.411+0000] {docker.py:446} INFO - e56429cbaf4a: Pulling fs layer
+[2023-03-29T08:15:11.411+0000] {docker.py:446} INFO - bf89d40c4c4e: Pulling fs layer
+[2023-03-29T08:15:11.411+0000] {docker.py:446} INFO - 31c06773aa7f: Pulling fs layer
+[2023-03-29T08:15:11.411+0000] {docker.py:446} INFO - 9354d1bc57c7: Pulling fs layer
+[2023-03-29T08:15:11.411+0000] {docker.py:446} INFO - bbcda6a60127: Waiting
+[2023-03-29T08:15:11.412+0000] {docker.py:446} INFO - 733530e9cc69: Waiting
+[2023-03-29T08:15:11.412+0000] {docker.py:446} INFO - e56429cbaf4a: Waiting
+[2023-03-29T08:15:11.412+0000] {docker.py:446} INFO - bf89d40c4c4e: Waiting
+[2023-03-29T08:15:11.412+0000] {docker.py:446} INFO - 31c06773aa7f: Waiting
+[2023-03-29T08:15:11.412+0000] {docker.py:446} INFO - 99cdff813800: Waiting
+[2023-03-29T08:15:11.412+0000] {docker.py:446} INFO - 7648ab525d5f: Waiting
+[2023-03-29T08:15:11.412+0000] {docker.py:446} INFO - 9354d1bc57c7: Waiting
+[2023-03-29T08:15:11.412+0000] {docker.py:446} INFO - b4a57f9bc76b: Waiting
+[2023-03-29T08:15:11.412+0000] {docker.py:446} INFO - 368cbb76c6b4: Waiting
+[2023-03-29T08:15:12.135+0000] {docker.py:446} INFO - 5dda314a937a: Downloading
+[2023-03-29T08:15:12.146+0000] {docker.py:446} INFO - 5dda314a937a: Download complete
+[2023-03-29T08:15:12.161+0000] {docker.py:446} INFO - 01b5b2efb836: Downloading
+[2023-03-29T08:15:12.368+0000] {docker.py:446} INFO - 09f5525c15a3: Downloading
+[2023-03-29T08:15:12.525+0000] {docker.py:446} INFO - 01b5b2efb836: Verifying Checksum
+[2023-03-29T08:15:12.529+0000] {docker.py:446} INFO - 01b5b2efb836: Download complete
+[2023-03-29T08:15:12.638+0000] {docker.py:446} INFO - 09f5525c15a3: Verifying Checksum
+[2023-03-29T08:15:12.639+0000] {docker.py:446} INFO - 09f5525c15a3: Download complete
+[2023-03-29T08:15:12.721+0000] {docker.py:446} INFO - 01b5b2efb836: Extracting
+[2023-03-29T08:15:13.099+0000] {docker.py:446} INFO - 99cdff813800: Downloading
+[2023-03-29T08:15:13.100+0000] {docker.py:446} INFO - 99cdff813800: Verifying Checksum
+[2023-03-29T08:15:13.100+0000] {docker.py:446} INFO - 99cdff813800: Download complete
+[2023-03-29T08:15:13.254+0000] {docker.py:446} INFO - 7648ab525d5f: Downloading
+[2023-03-29T08:15:13.298+0000] {docker.py:446} INFO - 7648ab525d5f: Verifying Checksum
+[2023-03-29T08:15:13.307+0000] {docker.py:446} INFO - 7648ab525d5f: Download complete
+[2023-03-29T08:15:13.775+0000] {docker.py:446} INFO - b4a57f9bc76b: Downloading
+[2023-03-29T08:15:14.282+0000] {docker.py:446} INFO - 368cbb76c6b4: Downloading
+[2023-03-29T08:15:14.334+0000] {docker.py:446} INFO - bbcda6a60127: Downloading
+[2023-03-29T08:15:14.343+0000] {docker.py:446} INFO - bbcda6a60127: Verifying Checksum
+[2023-03-29T08:15:14.344+0000] {docker.py:446} INFO - bbcda6a60127: Download complete
+[2023-03-29T08:15:14.613+0000] {docker.py:446} INFO - 368cbb76c6b4: Verifying Checksum
+[2023-03-29T08:15:14.619+0000] {docker.py:446} INFO - 368cbb76c6b4: Download complete
+[2023-03-29T08:15:15.579+0000] {docker.py:446} INFO - 733530e9cc69: Downloading
+[2023-03-29T08:15:15.769+0000] {docker.py:446} INFO - e56429cbaf4a: Downloading
+[2023-03-29T08:15:15.778+0000] {docker.py:446} INFO - e56429cbaf4a: Verifying Checksum
+[2023-03-29T08:15:15.778+0000] {docker.py:446} INFO - e56429cbaf4a: Download complete
+[2023-03-29T08:15:16.080+0000] {docker.py:446} INFO - 01b5b2efb836: Pull complete
+[2023-03-29T08:15:16.094+0000] {docker.py:446} INFO - 5dda314a937a: Extracting
+[2023-03-29T08:15:16.507+0000] {docker.py:446} INFO - b4a57f9bc76b: Verifying Checksum
+[2023-03-29T08:15:16.508+0000] {docker.py:446} INFO - b4a57f9bc76b: Download complete
+[2023-03-29T08:15:16.815+0000] {docker.py:446} INFO - bf89d40c4c4e: Downloading
+[2023-03-29T08:15:16.815+0000] {docker.py:446} INFO - bf89d40c4c4e: Verifying Checksum
+[2023-03-29T08:15:16.815+0000] {docker.py:446} INFO - bf89d40c4c4e: Download complete
+[2023-03-29T08:15:17.569+0000] {docker.py:446} INFO - 31c06773aa7f: Downloading
+[2023-03-29T08:15:17.570+0000] {docker.py:446} INFO - 31c06773aa7f: Verifying Checksum
+[2023-03-29T08:15:17.570+0000] {docker.py:446} INFO - 31c06773aa7f: Download complete
+[2023-03-29T08:15:17.978+0000] {docker.py:446} INFO - 9354d1bc57c7: Downloading
+[2023-03-29T08:15:18.000+0000] {docker.py:446} INFO - 733530e9cc69: Verifying Checksum
+[2023-03-29T08:15:18.000+0000] {docker.py:446} INFO - 733530e9cc69: Download complete
+[2023-03-29T08:15:18.056+0000] {docker.py:446} INFO - 9354d1bc57c7: Verifying Checksum
+[2023-03-29T08:15:18.056+0000] {docker.py:446} INFO - 9354d1bc57c7: Download complete
+[2023-03-29T08:15:22.753+0000] {base_job.py:232} ERROR - LocalTaskJob heartbeat got an exception
+Traceback (most recent call last):
+  File "/home/azureuser/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1900, in _execute_context
+    self.dialect.do_execute(
+  File "/home/azureuser/.local/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 736, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/azureuser/.local/lib/python3.8/site-packages/airflow/jobs/base_job.py", line 204, in heartbeat
+    session.merge(self)
+  File "/home/azureuser/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 3051, in merge
+    return self._merge(
+  File "/home/azureuser/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 3131, in _merge
+    merged = self.get(
+  File "/home/azureuser/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 2848, in get
+    return self._get_impl(
+  File "/home/azureuser/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 2970, in _get_impl
+    return db_load_fn(
+  File "/home/azureuser/.local/lib/python3.8/site-packages/sqlalchemy/orm/loading.py", line 530, in load_on_pk_identity
+    session.execute(
+  File "/home/azureuser/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 1714, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+  File "/home/azureuser/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1705, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "/home/azureuser/.local/lib/python3.8/site-packages/sqlalchemy/sql/elements.py", line 334, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/home/azureuser/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1572, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/home/azureuser/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1943, in _execute_context
+    self._handle_dbapi_exception(
+  File "/home/azureuser/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 2124, in _handle_dbapi_exception
+    util.raise_(
+  File "/home/azureuser/.local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 210, in raise_
+    raise exception
+  File "/home/azureuser/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1900, in _execute_context
+    self.dialect.do_execute(
+  File "/home/azureuser/.local/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 736, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) database is locked
+[SQL: SELECT job.id AS job_id, job.dag_id AS job_dag_id, job.state AS job_state, job.job_type AS job_job_type, job.start_date AS job_start_date, job.end_date AS job_end_date, job.latest_heartbeat AS job_latest_heartbeat, job.executor_class AS job_executor_class, job.hostname AS job_hostname, job.unixname AS job_unixname 
+FROM job 
+WHERE job.id = ? AND job.job_type IN (?)]
+[parameters: (989, 'LocalTaskJob')]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2023-03-29T08:15:24.027+0000] {docker.py:446} INFO - 5dda314a937a: Pull complete
+[2023-03-29T08:15:24.057+0000] {docker.py:446} INFO - 09f5525c15a3: Extracting
+[2023-03-29T08:15:25.584+0000] {docker.py:446} INFO - 09f5525c15a3: Pull complete
+[2023-03-29T08:15:25.600+0000] {docker.py:446} INFO - 99cdff813800: Extracting
+[2023-03-29T08:15:26.049+0000] {docker.py:446} INFO - 99cdff813800: Pull complete
+[2023-03-29T08:15:26.060+0000] {docker.py:446} INFO - 7648ab525d5f: Extracting
+[2023-03-29T08:15:26.817+0000] {docker.py:446} INFO - 7648ab525d5f: Pull complete
+[2023-03-29T08:15:26.923+0000] {docker.py:446} INFO - b4a57f9bc76b: Extracting
+[2023-03-29T08:15:42.165+0000] {docker.py:446} INFO - b4a57f9bc76b: Pull complete
+[2023-03-29T08:15:42.186+0000] {docker.py:446} INFO - 368cbb76c6b4: Extracting
+[2023-03-29T08:15:46.958+0000] {docker.py:446} INFO - 368cbb76c6b4: Pull complete
+[2023-03-29T08:15:46.970+0000] {docker.py:446} INFO - bbcda6a60127: Extracting
+[2023-03-29T08:15:47.391+0000] {docker.py:446} INFO - bbcda6a60127: Pull complete
+[2023-03-29T08:15:47.496+0000] {docker.py:446} INFO - 733530e9cc69: Extracting
+[2023-03-29T08:16:03.588+0000] {docker.py:446} INFO - 733530e9cc69: Pull complete
+[2023-03-29T08:16:03.601+0000] {docker.py:446} INFO - e56429cbaf4a: Extracting
+[2023-03-29T08:16:03.816+0000] {docker.py:446} INFO - e56429cbaf4a: Pull complete
+[2023-03-29T08:16:03.831+0000] {docker.py:446} INFO - bf89d40c4c4e: Extracting
+[2023-03-29T08:16:04.027+0000] {docker.py:446} INFO - bf89d40c4c4e: Pull complete
+[2023-03-29T08:16:04.042+0000] {docker.py:446} INFO - 31c06773aa7f: Extracting
+[2023-03-29T08:16:04.269+0000] {docker.py:446} INFO - 31c06773aa7f: Pull complete
+[2023-03-29T08:16:04.284+0000] {docker.py:446} INFO - 9354d1bc57c7: Extracting
+[2023-03-29T08:16:04.556+0000] {docker.py:446} INFO - 9354d1bc57c7: Pull complete
+[2023-03-29T08:16:04.592+0000] {docker.py:441} INFO - Digest: sha256:119eef5f2a2a8ef5b61d436fc4f864a6e0cc6685278ea6efdc1cb472e6f176f4
+[2023-03-29T08:16:04.603+0000] {docker.py:441} INFO - Status: Downloaded newer image for tanphamduy/dbt-maturity:latest
+[2023-03-29T08:16:04.608+0000] {docker.py:306} INFO - Starting docker container from image tanphamduy/dbt-maturity:latest
+[2023-03-29T08:16:04.614+0000] {docker.py:314} WARNING - Using remote engine or docker-in-docker and mounting temporary volume from host is not supported. Falling back to `mount_tmp_dir=False` mode. You can set `mount_tmp_dir` parameter to False to disable mounting and remove the warning
+[2023-03-29T08:16:08.402+0000] {docker.py:373} INFO - [0m08:16:08  Running with dbt=1.4.5
+[2023-03-29T08:16:08.438+0000] {docker.py:373} INFO - [0m08:16:08  Unable to do partial parsing because saved manifest not found. Starting full parse.
+[2023-03-29T08:16:09.983+0000] {docker.py:373} INFO - [0m08:16:09  Found 11 models, 20 tests, 0 snapshots, 0 analyses, 495 macros, 1 operation, 6 seed files, 6 sources, 1 exposure, 0 metrics
+[2023-03-29T08:16:09.985+0000] {docker.py:373} INFO - [0m08:16:09
+[2023-03-29T08:20:28.234+0000] {docker.py:373} INFO - [0m08:20:28  Concurrency: 2 threads (target='prod')
+[2023-03-29T08:20:28.235+0000] {docker.py:373} INFO - [0m08:20:28
+[2023-03-29T08:20:28.261+0000] {docker.py:373} INFO - [0m08:20:28  1 of 11 START sql view model STAGING.stg_claim_diagnosis ....................... [RUN]
+[2023-03-29T08:20:28.262+0000] {docker.py:373} INFO - [0m08:20:28  2 of 11 START sql view model STAGING.stg_claim_lines ........................... [RUN]
+[2023-03-29T08:20:35.445+0000] {docker.py:373} INFO - [0m08:20:35  2 of 11 OK created sql view model STAGING.stg_claim_lines ...................... [[32mOK[0m in 7.18s]
+[2023-03-29T08:20:35.449+0000] {docker.py:373} INFO - [0m08:20:35  3 of 11 START sql view model STAGING.stg_claims ................................ [RUN]
+[2023-03-29T08:20:35.554+0000] {docker.py:373} INFO - [0m08:20:35  1 of 11 OK created sql view model STAGING.stg_claim_diagnosis .................. [[32mOK[0m in 7.28s]
+[0m08:20:35  4 of 11 START sql view model STAGING.stg_doc_specialties ....................... [RUN]
+[2023-03-29T08:20:37.141+0000] {docker.py:373} INFO - [0m08:20:37  4 of 11 OK created sql view model STAGING.stg_doc_specialties .................. [[32mOK[0m in 1.60s]
+[2023-03-29T08:20:37.142+0000] {docker.py:373} INFO - [0m08:20:37  5 of 11 START sql view model STAGING.stg_doctors ............................... [RUN]
+[2023-03-29T08:20:37.335+0000] {docker.py:373} INFO - [0m08:20:37  3 of 11 OK created sql view model STAGING.stg_claims ........................... [[32mOK[0m in 1.88s]
+[2023-03-29T08:20:37.339+0000] {docker.py:373} INFO - [0m08:20:37  6 of 11 START sql view model STAGING.stg_patients .............................. [RUN]
+[2023-03-29T08:20:38.824+0000] {docker.py:373} INFO - [0m08:20:38  5 of 11 OK created sql view model STAGING.stg_doctors .......................... [[32mOK[0m in 1.68s]
+[2023-03-29T08:20:38.826+0000] {docker.py:373} INFO - [0m08:20:38  7 of 11 START sql table model BILLING_ANALYTICS.int_billed_claim_amounts ....... [RUN]
+[2023-03-29T08:20:39.132+0000] {docker.py:373} INFO - [0m08:20:39  6 of 11 OK created sql view model STAGING.stg_patients ......................... [[32mOK[0m in 1.80s]
+[2023-03-29T08:20:39.133+0000] {docker.py:373} INFO - [0m08:20:39  8 of 11 START sql table model BILLING_ANALYTICS.int_claim_diagnosis_pivoted .... [RUN]
+[2023-03-29T08:21:04.115+0000] {docker.py:373} INFO - [0m08:21:04  7 of 11 OK created sql table model BILLING_ANALYTICS.int_billed_claim_amounts .. [[32mOK[0m in 25.29s]
+[2023-03-29T08:21:04.117+0000] {docker.py:373} INFO - [0m08:21:04  9 of 11 START sql table model BILLING_ANALYTICS.dim_doctors .................... [RUN]
+[2023-03-29T08:21:04.123+0000] {docker.py:373} INFO - [0m08:21:04  8 of 11 OK created sql table model BILLING_ANALYTICS.int_claim_diagnosis_pivoted  [[32mOK[0m in 24.99s]
+[2023-03-29T08:21:04.130+0000] {docker.py:373} INFO - [0m08:21:04  10 of 11 START sql table model BILLING_ANALYTICS.dim_patients .................. [RUN]
+[2023-03-29T08:21:12.011+0000] {docker.py:373} INFO - [0m08:21:12  10 of 11 OK created sql table model BILLING_ANALYTICS.dim_patients ............. [[32mOK[0m in 7.88s]
+[2023-03-29T08:21:12.013+0000] {docker.py:373} INFO - [0m08:21:12  11 of 11 START sql incremental model BILLING_ANALYTICS.fct_billed_patient_claims  [RUN]
+[2023-03-29T08:21:12.175+0000] {docker.py:373} INFO - [0m08:21:12  9 of 11 OK created sql table model BILLING_ANALYTICS.dim_doctors ............... [[32mOK[0m in 8.06s]
+[2023-03-29T08:21:24.981+0000] {docker.py:373} INFO - [0m08:21:24  11 of 11 OK created sql incremental model BILLING_ANALYTICS.fct_billed_patient_claims  [[32mOK[0m in 12.97s]
+[2023-03-29T08:21:25.167+0000] {docker.py:373} INFO - [0m08:21:25
+[2023-03-29T08:21:25.168+0000] {docker.py:373} INFO - [0m08:21:25  Running 1 on-run-end hook
+[2023-03-29T08:21:25.172+0000] {docker.py:373} INFO - [0m08:21:25
+[2023-03-29T08:21:25.188+0000] {docker.py:373} INFO - [0m08:21:25  Project Test Coverage: 81.82%
+[2023-03-29T08:21:25.198+0000] {docker.py:373} INFO - [0m08:21:25  Project Test to Model Ratio: 1.818
+[0m08:21:25  
+[0m08:21:25  1 of 1 START hook: dbt_maturity.on-run-end.0 ................................... [RUN]
+[0m08:21:25  1 of 1 OK hook: dbt_maturity.on-run-end.0 ...................................... [[32mOK[0m in 0.00s]
+[0m08:21:25
+[2023-03-29T08:21:25.395+0000] {docker.py:373} INFO - [0m08:21:25  
+[0m08:21:25  Finished running 6 view models, 4 table models, 1 incremental model, 1 hook in 0 hours 5 minutes and 15.38 seconds (315.38s).
+[0m08:21:25  
+[0m08:21:25  [32mCompleted successfully[0m
+[0m08:21:25  
+[0m08:21:25  Done. PASS=11 WARN=0 ERROR=0 SKIP=0 TOTAL=11
+[2023-03-29T08:21:27.835+0000] {taskinstance.py:1322} INFO - Marking task as SUCCESS. dag_id=dbt_maturity_docker_run, task_id=dbt_run, execution_date=20230327T000000, start_date=20230329T081507, end_date=20230329T082127
+[2023-03-29T08:21:27.866+0000] {local_task_job.py:159} INFO - Task exited with return code 0
+[2023-03-29T08:21:27.899+0000] {taskinstance.py:2582} INFO - 1 downstream tasks scheduled from follow-on schedule check

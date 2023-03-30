@@ -1,0 +1,29 @@
+[2023-03-29T08:03:04.851+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: docker_sample.print_hello scheduled__2023-03-28T05:30:00+00:00 [queued]>
+[2023-03-29T08:03:04.858+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: docker_sample.print_hello scheduled__2023-03-28T05:30:00+00:00 [queued]>
+[2023-03-29T08:03:04.858+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-29T08:03:04.858+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 2
+[2023-03-29T08:03:04.859+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-29T08:03:04.892+0000] {taskinstance.py:1304} INFO - Executing <Task(BashOperator): print_hello> on 2023-03-28 05:30:00+00:00
+[2023-03-29T08:03:04.896+0000] {standard_task_runner.py:55} INFO - Started process 80366 to run task
+[2023-03-29T08:03:04.903+0000] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'docker_sample', 'print_hello', 'scheduled__2023-03-28T05:30:00+00:00', '--job-id', '846', '--raw', '--subdir', 'DAGS_FOLDER/test_docker_operator.py', '--cfg-path', '/tmp/tmp8s35ld3n']
+[2023-03-29T08:03:04.905+0000] {standard_task_runner.py:83} INFO - Job 846: Subtask print_hello
+[2023-03-29T08:03:04.966+0000] {task_command.py:389} INFO - Running <TaskInstance: docker_sample.print_hello scheduled__2023-03-28T05:30:00+00:00 [running]> on host vibrdairflow.tciw5gv3lhjetcyg0kqzfvdylc.hx.internal.cloudapp.net
+[2023-03-29T08:03:05.054+0000] {taskinstance.py:1511} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=airflow@example.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=docker_sample
+AIRFLOW_CTX_TASK_ID=print_hello
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-28T05:30:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-03-28T05:30:00+00:00
+[2023-03-29T08:03:05.056+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2023-03-29T08:03:05.057+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'echo "hello world!!!"']
+[2023-03-29T08:03:05.066+0000] {subprocess.py:86} INFO - Output:
+[2023-03-29T08:03:05.069+0000] {subprocess.py:93} INFO - hello world!!!
+[2023-03-29T08:03:05.069+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2023-03-29T08:03:05.100+0000] {taskinstance.py:1322} INFO - Marking task as SUCCESS. dag_id=docker_sample, task_id=print_hello, execution_date=20230328T053000, start_date=20230329T080304, end_date=20230329T080305
+[2023-03-29T08:03:05.157+0000] {local_task_job.py:159} INFO - Task exited with return code 0
+[2023-03-29T08:03:05.170+0000] {taskinstance.py:2582} INFO - 0 downstream tasks scheduled from follow-on schedule check

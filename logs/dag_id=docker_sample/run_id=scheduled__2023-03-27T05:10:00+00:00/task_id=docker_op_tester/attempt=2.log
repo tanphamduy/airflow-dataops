@@ -1,0 +1,93 @@
+[2023-03-29T06:38:59.604+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: docker_sample.docker_op_tester scheduled__2023-03-27T05:10:00+00:00 [queued]>
+[2023-03-29T06:38:59.610+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: docker_sample.docker_op_tester scheduled__2023-03-27T05:10:00+00:00 [queued]>
+[2023-03-29T06:38:59.611+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-29T06:38:59.611+0000] {taskinstance.py:1284} INFO - Starting attempt 2 of 2
+[2023-03-29T06:38:59.611+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-29T06:38:59.639+0000] {taskinstance.py:1304} INFO - Executing <Task(DockerOperator): docker_op_tester> on 2023-03-27 05:10:00+00:00
+[2023-03-29T06:38:59.644+0000] {standard_task_runner.py:55} INFO - Started process 323985 to run task
+[2023-03-29T06:38:59.649+0000] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'docker_sample', 'docker_op_tester', 'scheduled__2023-03-27T05:10:00+00:00', '--job-id', '252', '--raw', '--subdir', 'DAGS_FOLDER/test_docker_operator.py', '--cfg-path', '/tmp/tmpexwrr7uq']
+[2023-03-29T06:38:59.651+0000] {standard_task_runner.py:83} INFO - Job 252: Subtask docker_op_tester
+[2023-03-29T06:38:59.716+0000] {task_command.py:389} INFO - Running <TaskInstance: docker_sample.docker_op_tester scheduled__2023-03-27T05:10:00+00:00 [running]> on host vibrdairflow.tciw5gv3lhjetcyg0kqzfvdylc.hx.internal.cloudapp.net
+[2023-03-29T06:38:59.774+0000] {taskinstance.py:1511} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=airflow@example.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=docker_sample
+AIRFLOW_CTX_TASK_ID=docker_op_tester
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-27T05:10:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-03-27T05:10:00+00:00
+[2023-03-29T06:38:59.780+0000] {taskinstance.py:1772} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/azureuser/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/home/azureuser/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 398, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/lib/python3.8/http/client.py", line 1256, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.8/http/client.py", line 1302, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.8/http/client.py", line 1251, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.8/http/client.py", line 1011, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.8/http/client.py", line 951, in send
+    self.connect()
+  File "/home/azureuser/.local/lib/python3.8/site-packages/docker/transport/unixconn.py", line 30, in connect
+    sock.connect(self.unix_socket)
+FileNotFoundError: [Errno 2] No such file or directory
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/azureuser/.local/lib/python3.8/site-packages/requests/adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "/home/azureuser/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "/home/azureuser/.local/lib/python3.8/site-packages/urllib3/util/retry.py", line 550, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/azureuser/.local/lib/python3.8/site-packages/urllib3/packages/six.py", line 769, in reraise
+    raise value.with_traceback(tb)
+  File "/home/azureuser/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/home/azureuser/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 398, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/lib/python3.8/http/client.py", line 1256, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.8/http/client.py", line 1302, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.8/http/client.py", line 1251, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.8/http/client.py", line 1011, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.8/http/client.py", line 951, in send
+    self.connect()
+  File "/home/azureuser/.local/lib/python3.8/site-packages/docker/transport/unixconn.py", line 30, in connect
+    sock.connect(self.unix_socket)
+urllib3.exceptions.ProtocolError: ('Connection aborted.', FileNotFoundError(2, 'No such file or directory'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/azureuser/.local/lib/python3.8/site-packages/airflow/providers/docker/operators/docker.py", line 431, in execute
+    if self.force_pull or not self.cli.images(name=self.image):
+  File "/home/azureuser/.local/lib/python3.8/site-packages/docker/api/image.py", line 96, in images
+    res = self._result(self._get(self._url("/images/json"), params=params),
+  File "/home/azureuser/.local/lib/python3.8/site-packages/docker/utils/decorators.py", line 46, in inner
+    return f(self, *args, **kwargs)
+  File "/home/azureuser/.local/lib/python3.8/site-packages/docker/api/client.py", line 237, in _get
+    return self.get(url, **self._set_request_timeout(kwargs))
+  File "/home/azureuser/.local/lib/python3.8/site-packages/requests/sessions.py", line 600, in get
+    return self.request("GET", url, **kwargs)
+  File "/home/azureuser/.local/lib/python3.8/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/azureuser/.local/lib/python3.8/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/azureuser/.local/lib/python3.8/site-packages/requests/adapters.py", line 547, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', FileNotFoundError(2, 'No such file or directory'))
+[2023-03-29T06:38:59.787+0000] {taskinstance.py:1322} INFO - Marking task as FAILED. dag_id=docker_sample, task_id=docker_op_tester, execution_date=20230327T051000, start_date=20230329T063859, end_date=20230329T063859
+[2023-03-29T06:38:59.809+0000] {standard_task_runner.py:100} ERROR - Failed to execute job 252 for task docker_op_tester (('Connection aborted.', FileNotFoundError(2, 'No such file or directory')); 323985)
+[2023-03-29T06:38:59.821+0000] {local_task_job.py:159} INFO - Task exited with return code 1
+[2023-03-29T06:38:59.839+0000] {taskinstance.py:2582} INFO - 0 downstream tasks scheduled from follow-on schedule check

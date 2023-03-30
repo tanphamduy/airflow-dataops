@@ -1,0 +1,234 @@
+[2023-03-28T09:43:32.071+0000] {processor.py:153} INFO - Started process (PID=48314) to work on /home/azureuser/airflow/dags/dbt-run.py
+[2023-03-28T09:43:32.072+0000] {processor.py:743} INFO - Processing file /home/azureuser/airflow/dags/dbt-run.py for tasks to queue
+[2023-03-28T09:43:32.073+0000] {logging_mixin.py:137} INFO - [2023-03-28T09:43:32.073+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/azureuser/airflow/dags/dbt-run.py
+[2023-03-28T09:43:32.079+0000] {logging_mixin.py:137} INFO - [2023-03-28T09:43:32.075+0000] {dagbag.py:343} ERROR - Failed to import: /home/azureuser/airflow/dags/dbt-run.py
+Traceback (most recent call last):
+  File "/home/azureuser/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/azureuser/airflow/dags/dbt-run.py", line 1, in <module>
+    from datetime import dateimte, timedelta
+ImportError: cannot import name 'dateimte' from 'datetime' (/usr/lib/python3.8/datetime.py)
+[2023-03-28T09:43:32.079+0000] {processor.py:755} WARNING - No viable dags retrieved from /home/azureuser/airflow/dags/dbt-run.py
+[2023-03-28T09:43:32.107+0000] {processor.py:175} INFO - Processing /home/azureuser/airflow/dags/dbt-run.py took 0.039 seconds
+[2023-03-28T09:44:34.452+0000] {processor.py:153} INFO - Started process (PID=48913) to work on /home/azureuser/airflow/dags/dbt-run.py
+[2023-03-28T09:44:34.454+0000] {processor.py:743} INFO - Processing file /home/azureuser/airflow/dags/dbt-run.py for tasks to queue
+[2023-03-28T09:44:34.454+0000] {logging_mixin.py:137} INFO - [2023-03-28T09:44:34.454+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/azureuser/airflow/dags/dbt-run.py
+[2023-03-28T09:44:34.457+0000] {logging_mixin.py:137} INFO - [2023-03-28T09:44:34.456+0000] {dagbag.py:343} ERROR - Failed to import: /home/azureuser/airflow/dags/dbt-run.py
+Traceback (most recent call last):
+  File "/home/azureuser/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/azureuser/airflow/dags/dbt-run.py", line 1, in <module>
+    from datetime import dateimte, timedelta
+ImportError: cannot import name 'dateimte' from 'datetime' (/usr/lib/python3.8/datetime.py)
+[2023-03-28T09:44:34.457+0000] {processor.py:755} WARNING - No viable dags retrieved from /home/azureuser/airflow/dags/dbt-run.py
+[2023-03-28T09:44:34.489+0000] {processor.py:175} INFO - Processing /home/azureuser/airflow/dags/dbt-run.py took 0.041 seconds
+[2023-03-28T09:45:09.335+0000] {processor.py:153} INFO - Started process (PID=49044) to work on /home/azureuser/airflow/dags/dbt-run.py
+[2023-03-28T09:45:09.337+0000] {processor.py:743} INFO - Processing file /home/azureuser/airflow/dags/dbt-run.py for tasks to queue
+[2023-03-28T09:45:09.337+0000] {logging_mixin.py:137} INFO - [2023-03-28T09:45:09.337+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/azureuser/airflow/dags/dbt-run.py
+[2023-03-28T09:45:09.340+0000] {logging_mixin.py:137} INFO - [2023-03-28T09:45:09.339+0000] {dagbag.py:343} ERROR - Failed to import: /home/azureuser/airflow/dags/dbt-run.py
+Traceback (most recent call last):
+  File "/home/azureuser/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/azureuser/airflow/dags/dbt-run.py", line 1, in <module>
+    from datetime import dateimte, timedelta
+ImportError: cannot import name 'dateimte' from 'datetime' (/usr/lib/python3.8/datetime.py)
+[2023-03-28T09:45:09.340+0000] {processor.py:755} WARNING - No viable dags retrieved from /home/azureuser/airflow/dags/dbt-run.py
+[2023-03-28T09:45:09.375+0000] {processor.py:175} INFO - Processing /home/azureuser/airflow/dags/dbt-run.py took 0.045 seconds
+[2023-03-28T09:45:43.605+0000] {processor.py:153} INFO - Started process (PID=49189) to work on /home/azureuser/airflow/dags/dbt-run.py
+[2023-03-28T09:45:43.606+0000] {processor.py:743} INFO - Processing file /home/azureuser/airflow/dags/dbt-run.py for tasks to queue
+[2023-03-28T09:45:43.607+0000] {logging_mixin.py:137} INFO - [2023-03-28T09:45:43.607+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/azureuser/airflow/dags/dbt-run.py
+[2023-03-28T09:45:43.610+0000] {logging_mixin.py:137} INFO - [2023-03-28T09:45:43.609+0000] {dagbag.py:343} ERROR - Failed to import: /home/azureuser/airflow/dags/dbt-run.py
+Traceback (most recent call last):
+  File "/home/azureuser/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/azureuser/airflow/dags/dbt-run.py", line 1, in <module>
+    from datetime import dateimte, timedelta
+ImportError: cannot import name 'dateimte' from 'datetime' (/usr/lib/python3.8/datetime.py)
+[2023-03-28T09:45:43.610+0000] {processor.py:755} WARNING - No viable dags retrieved from /home/azureuser/airflow/dags/dbt-run.py
+[2023-03-28T09:45:43.642+0000] {processor.py:175} INFO - Processing /home/azureuser/airflow/dags/dbt-run.py took 0.041 seconds
+[2023-03-28T09:46:18.574+0000] {processor.py:153} INFO - Started process (PID=49257) to work on /home/azureuser/airflow/dags/dbt-run.py
+[2023-03-28T09:46:18.577+0000] {processor.py:743} INFO - Processing file /home/azureuser/airflow/dags/dbt-run.py for tasks to queue
+[2023-03-28T09:46:18.577+0000] {logging_mixin.py:137} INFO - [2023-03-28T09:46:18.577+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/azureuser/airflow/dags/dbt-run.py
+[2023-03-28T09:46:18.580+0000] {logging_mixin.py:137} INFO - [2023-03-28T09:46:18.579+0000] {dagbag.py:343} ERROR - Failed to import: /home/azureuser/airflow/dags/dbt-run.py
+Traceback (most recent call last):
+  File "/home/azureuser/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/azureuser/airflow/dags/dbt-run.py", line 1, in <module>
+    from datetime import dateimte, timedelta
+ImportError: cannot import name 'dateimte' from 'datetime' (/usr/lib/python3.8/datetime.py)
+[2023-03-28T09:46:18.581+0000] {processor.py:755} WARNING - No viable dags retrieved from /home/azureuser/airflow/dags/dbt-run.py
+[2023-03-28T09:46:18.613+0000] {processor.py:175} INFO - Processing /home/azureuser/airflow/dags/dbt-run.py took 0.043 seconds
+[2023-03-28T09:46:53.896+0000] {processor.py:153} INFO - Started process (PID=49324) to work on /home/azureuser/airflow/dags/dbt-run.py
+[2023-03-28T09:46:53.898+0000] {processor.py:743} INFO - Processing file /home/azureuser/airflow/dags/dbt-run.py for tasks to queue
+[2023-03-28T09:46:53.899+0000] {logging_mixin.py:137} INFO - [2023-03-28T09:46:53.898+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/azureuser/airflow/dags/dbt-run.py
+[2023-03-28T09:46:53.902+0000] {logging_mixin.py:137} INFO - [2023-03-28T09:46:53.901+0000] {dagbag.py:343} ERROR - Failed to import: /home/azureuser/airflow/dags/dbt-run.py
+Traceback (most recent call last):
+  File "/home/azureuser/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/azureuser/airflow/dags/dbt-run.py", line 1, in <module>
+    from datetime import dateimte, timedelta
+ImportError: cannot import name 'dateimte' from 'datetime' (/usr/lib/python3.8/datetime.py)
+[2023-03-28T09:46:53.902+0000] {processor.py:755} WARNING - No viable dags retrieved from /home/azureuser/airflow/dags/dbt-run.py
+[2023-03-28T09:46:53.933+0000] {processor.py:175} INFO - Processing /home/azureuser/airflow/dags/dbt-run.py took 0.040 seconds
+[2023-03-28T09:47:29.120+0000] {processor.py:153} INFO - Started process (PID=49386) to work on /home/azureuser/airflow/dags/dbt-run.py
+[2023-03-28T09:47:29.121+0000] {processor.py:743} INFO - Processing file /home/azureuser/airflow/dags/dbt-run.py for tasks to queue
+[2023-03-28T09:47:29.122+0000] {logging_mixin.py:137} INFO - [2023-03-28T09:47:29.122+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/azureuser/airflow/dags/dbt-run.py
+[2023-03-28T09:47:29.125+0000] {logging_mixin.py:137} INFO - [2023-03-28T09:47:29.124+0000] {dagbag.py:343} ERROR - Failed to import: /home/azureuser/airflow/dags/dbt-run.py
+Traceback (most recent call last):
+  File "/home/azureuser/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/azureuser/airflow/dags/dbt-run.py", line 1, in <module>
+    from datetime import dateimte, timedelta
+ImportError: cannot import name 'dateimte' from 'datetime' (/usr/lib/python3.8/datetime.py)
+[2023-03-28T09:47:29.125+0000] {processor.py:755} WARNING - No viable dags retrieved from /home/azureuser/airflow/dags/dbt-run.py
+[2023-03-28T09:47:29.156+0000] {processor.py:175} INFO - Processing /home/azureuser/airflow/dags/dbt-run.py took 0.040 seconds
+[2023-03-28T09:48:06.209+0000] {processor.py:153} INFO - Started process (PID=49462) to work on /home/azureuser/airflow/dags/dbt-run.py
+[2023-03-28T09:48:06.210+0000] {processor.py:743} INFO - Processing file /home/azureuser/airflow/dags/dbt-run.py for tasks to queue
+[2023-03-28T09:48:06.211+0000] {logging_mixin.py:137} INFO - [2023-03-28T09:48:06.211+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/azureuser/airflow/dags/dbt-run.py
+[2023-03-28T09:48:06.213+0000] {logging_mixin.py:137} INFO - [2023-03-28T09:48:06.212+0000] {dagbag.py:343} ERROR - Failed to import: /home/azureuser/airflow/dags/dbt-run.py
+Traceback (most recent call last):
+  File "/home/azureuser/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/azureuser/airflow/dags/dbt-run.py", line 1, in <module>
+    from datetime import dateimte, timedelta
+ImportError: cannot import name 'dateimte' from 'datetime' (/usr/lib/python3.8/datetime.py)
+[2023-03-28T09:48:06.214+0000] {processor.py:755} WARNING - No viable dags retrieved from /home/azureuser/airflow/dags/dbt-run.py
+[2023-03-28T09:48:06.243+0000] {processor.py:175} INFO - Processing /home/azureuser/airflow/dags/dbt-run.py took 0.038 seconds
+[2023-03-28T09:48:41.950+0000] {processor.py:153} INFO - Started process (PID=49563) to work on /home/azureuser/airflow/dags/dbt-run.py
+[2023-03-28T09:48:41.953+0000] {processor.py:743} INFO - Processing file /home/azureuser/airflow/dags/dbt-run.py for tasks to queue
+[2023-03-28T09:48:41.953+0000] {logging_mixin.py:137} INFO - [2023-03-28T09:48:41.953+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/azureuser/airflow/dags/dbt-run.py
+[2023-03-28T09:48:41.956+0000] {logging_mixin.py:137} INFO - [2023-03-28T09:48:41.955+0000] {dagbag.py:343} ERROR - Failed to import: /home/azureuser/airflow/dags/dbt-run.py
+Traceback (most recent call last):
+  File "/home/azureuser/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/azureuser/airflow/dags/dbt-run.py", line 1, in <module>
+    from datetime import dateimte, timedelta
+ImportError: cannot import name 'dateimte' from 'datetime' (/usr/lib/python3.8/datetime.py)
+[2023-03-28T09:48:41.957+0000] {processor.py:755} WARNING - No viable dags retrieved from /home/azureuser/airflow/dags/dbt-run.py
+[2023-03-28T09:48:41.988+0000] {processor.py:175} INFO - Processing /home/azureuser/airflow/dags/dbt-run.py took 0.042 seconds
+[2023-03-28T09:49:15.856+0000] {processor.py:153} INFO - Started process (PID=49629) to work on /home/azureuser/airflow/dags/dbt-run.py
+[2023-03-28T09:49:15.858+0000] {processor.py:743} INFO - Processing file /home/azureuser/airflow/dags/dbt-run.py for tasks to queue
+[2023-03-28T09:49:15.859+0000] {logging_mixin.py:137} INFO - [2023-03-28T09:49:15.859+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/azureuser/airflow/dags/dbt-run.py
+[2023-03-28T09:49:15.861+0000] {logging_mixin.py:137} INFO - [2023-03-28T09:49:15.860+0000] {dagbag.py:343} ERROR - Failed to import: /home/azureuser/airflow/dags/dbt-run.py
+Traceback (most recent call last):
+  File "/home/azureuser/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/azureuser/airflow/dags/dbt-run.py", line 1, in <module>
+    from datetime import dateimte, timedelta
+ImportError: cannot import name 'dateimte' from 'datetime' (/usr/lib/python3.8/datetime.py)
+[2023-03-28T09:49:15.862+0000] {processor.py:755} WARNING - No viable dags retrieved from /home/azureuser/airflow/dags/dbt-run.py
+[2023-03-28T09:49:15.891+0000] {processor.py:175} INFO - Processing /home/azureuser/airflow/dags/dbt-run.py took 0.039 seconds
+[2023-03-28T09:49:52.013+0000] {processor.py:153} INFO - Started process (PID=49694) to work on /home/azureuser/airflow/dags/dbt-run.py
+[2023-03-28T09:49:52.015+0000] {processor.py:743} INFO - Processing file /home/azureuser/airflow/dags/dbt-run.py for tasks to queue
+[2023-03-28T09:49:52.015+0000] {logging_mixin.py:137} INFO - [2023-03-28T09:49:52.015+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/azureuser/airflow/dags/dbt-run.py
+[2023-03-28T09:49:52.018+0000] {logging_mixin.py:137} INFO - [2023-03-28T09:49:52.017+0000] {dagbag.py:343} ERROR - Failed to import: /home/azureuser/airflow/dags/dbt-run.py
+Traceback (most recent call last):
+  File "/home/azureuser/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/azureuser/airflow/dags/dbt-run.py", line 1, in <module>
+    from datetime import dateimte, timedelta
+ImportError: cannot import name 'dateimte' from 'datetime' (/usr/lib/python3.8/datetime.py)
+[2023-03-28T09:49:52.019+0000] {processor.py:755} WARNING - No viable dags retrieved from /home/azureuser/airflow/dags/dbt-run.py
+[2023-03-28T09:49:52.050+0000] {processor.py:175} INFO - Processing /home/azureuser/airflow/dags/dbt-run.py took 0.041 seconds
+[2023-03-28T09:50:30.124+0000] {processor.py:153} INFO - Started process (PID=49763) to work on /home/azureuser/airflow/dags/dbt-run.py
+[2023-03-28T09:50:30.125+0000] {processor.py:743} INFO - Processing file /home/azureuser/airflow/dags/dbt-run.py for tasks to queue
+[2023-03-28T09:50:30.126+0000] {logging_mixin.py:137} INFO - [2023-03-28T09:50:30.126+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/azureuser/airflow/dags/dbt-run.py
+[2023-03-28T09:50:30.129+0000] {logging_mixin.py:137} INFO - [2023-03-28T09:50:30.128+0000] {dagbag.py:343} ERROR - Failed to import: /home/azureuser/airflow/dags/dbt-run.py
+Traceback (most recent call last):
+  File "/home/azureuser/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/azureuser/airflow/dags/dbt-run.py", line 1, in <module>
+    from datetime import dateimte, timedelta
+ImportError: cannot import name 'dateimte' from 'datetime' (/usr/lib/python3.8/datetime.py)
+[2023-03-28T09:50:30.130+0000] {processor.py:755} WARNING - No viable dags retrieved from /home/azureuser/airflow/dags/dbt-run.py
+[2023-03-28T09:50:30.161+0000] {processor.py:175} INFO - Processing /home/azureuser/airflow/dags/dbt-run.py took 0.041 seconds
+[2023-03-28T09:51:07.938+0000] {processor.py:153} INFO - Started process (PID=49946) to work on /home/azureuser/airflow/dags/dbt-run.py
+[2023-03-28T09:51:07.940+0000] {processor.py:743} INFO - Processing file /home/azureuser/airflow/dags/dbt-run.py for tasks to queue
+[2023-03-28T09:51:07.940+0000] {logging_mixin.py:137} INFO - [2023-03-28T09:51:07.940+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/azureuser/airflow/dags/dbt-run.py
+[2023-03-28T09:51:07.943+0000] {logging_mixin.py:137} INFO - [2023-03-28T09:51:07.942+0000] {dagbag.py:343} ERROR - Failed to import: /home/azureuser/airflow/dags/dbt-run.py
+Traceback (most recent call last):
+  File "/home/azureuser/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/azureuser/airflow/dags/dbt-run.py", line 1, in <module>
+    from datetime import dateimte, timedelta
+ImportError: cannot import name 'dateimte' from 'datetime' (/usr/lib/python3.8/datetime.py)
+[2023-03-28T09:51:07.943+0000] {processor.py:755} WARNING - No viable dags retrieved from /home/azureuser/airflow/dags/dbt-run.py
+[2023-03-28T09:51:07.975+0000] {processor.py:175} INFO - Processing /home/azureuser/airflow/dags/dbt-run.py took 0.042 seconds
+[2023-03-28T09:51:44.970+0000] {processor.py:153} INFO - Started process (PID=50119) to work on /home/azureuser/airflow/dags/dbt-run.py
+[2023-03-28T09:51:44.972+0000] {processor.py:743} INFO - Processing file /home/azureuser/airflow/dags/dbt-run.py for tasks to queue
+[2023-03-28T09:51:44.972+0000] {logging_mixin.py:137} INFO - [2023-03-28T09:51:44.972+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/azureuser/airflow/dags/dbt-run.py
+[2023-03-28T09:51:44.975+0000] {logging_mixin.py:137} INFO - [2023-03-28T09:51:44.974+0000] {dagbag.py:343} ERROR - Failed to import: /home/azureuser/airflow/dags/dbt-run.py
+Traceback (most recent call last):
+  File "/home/azureuser/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/azureuser/airflow/dags/dbt-run.py", line 1, in <module>
+    from datetime import dateimte, timedelta
+ImportError: cannot import name 'dateimte' from 'datetime' (/usr/lib/python3.8/datetime.py)
+[2023-03-28T09:51:44.976+0000] {processor.py:755} WARNING - No viable dags retrieved from /home/azureuser/airflow/dags/dbt-run.py
+[2023-03-28T09:51:45.011+0000] {processor.py:175} INFO - Processing /home/azureuser/airflow/dags/dbt-run.py took 0.044 seconds
+[2023-03-28T09:52:21.724+0000] {processor.py:153} INFO - Started process (PID=50195) to work on /home/azureuser/airflow/dags/dbt-run.py
+[2023-03-28T09:52:21.726+0000] {processor.py:743} INFO - Processing file /home/azureuser/airflow/dags/dbt-run.py for tasks to queue
+[2023-03-28T09:52:21.727+0000] {logging_mixin.py:137} INFO - [2023-03-28T09:52:21.726+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/azureuser/airflow/dags/dbt-run.py
+[2023-03-28T09:52:21.730+0000] {logging_mixin.py:137} INFO - [2023-03-28T09:52:21.728+0000] {dagbag.py:343} ERROR - Failed to import: /home/azureuser/airflow/dags/dbt-run.py
+Traceback (most recent call last):
+  File "/home/azureuser/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/azureuser/airflow/dags/dbt-run.py", line 1, in <module>
+    from datetime import dateimte, timedelta
+ImportError: cannot import name 'dateimte' from 'datetime' (/usr/lib/python3.8/datetime.py)
+[2023-03-28T09:52:21.730+0000] {processor.py:755} WARNING - No viable dags retrieved from /home/azureuser/airflow/dags/dbt-run.py
+[2023-03-28T09:52:21.765+0000] {processor.py:175} INFO - Processing /home/azureuser/airflow/dags/dbt-run.py took 0.044 seconds
+[2023-03-28T09:52:59.695+0000] {processor.py:153} INFO - Started process (PID=50344) to work on /home/azureuser/airflow/dags/dbt-run.py
+[2023-03-28T09:52:59.698+0000] {processor.py:743} INFO - Processing file /home/azureuser/airflow/dags/dbt-run.py for tasks to queue
+[2023-03-28T09:52:59.699+0000] {logging_mixin.py:137} INFO - [2023-03-28T09:52:59.698+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/azureuser/airflow/dags/dbt-run.py
+[2023-03-28T09:52:59.713+0000] {logging_mixin.py:137} INFO - [2023-03-28T09:52:59.708+0000] {dagbag.py:343} ERROR - Failed to import: /home/azureuser/airflow/dags/dbt-run.py
+Traceback (most recent call last):
+  File "/home/azureuser/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/azureuser/airflow/dags/dbt-run.py", line 13, in <module>
+    dbt_test = BashOperator(task_id="dbt_run", bash_command="dbt test")
+  File "/home/azureuser/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 411, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/azureuser/.local/lib/python3.8/site-packages/airflow/operators/bash.py", line 147, in __init__
+    super().__init__(**kwargs)
+  File "/home/azureuser/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 411, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/azureuser/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 777, in __init__
+    task_group.add(self)
+  File "/home/azureuser/.local/lib/python3.8/site-packages/airflow/utils/task_group.py", line 220, in add
+    raise DuplicateTaskIdFound(f"{node_type} id '{key}' has already been added to the DAG")
+airflow.exceptions.DuplicateTaskIdFound: Task id 'dbt_run' has already been added to the DAG
+[2023-03-28T09:52:59.713+0000] {processor.py:755} WARNING - No viable dags retrieved from /home/azureuser/airflow/dags/dbt-run.py
+[2023-03-28T09:52:59.745+0000] {processor.py:175} INFO - Processing /home/azureuser/airflow/dags/dbt-run.py took 0.054 seconds
