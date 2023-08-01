@@ -10,7 +10,7 @@ dag = DAG(
     default_args={
         'owner': 'tan',
         'depends_on_past': False,
-        'email': ['tan.phamduy@vib.com.vn'],
+        'email': ['tanphamduy'],
         'email_on_failure': False,
         'email_on_retry': False,
         'retries': 1,
